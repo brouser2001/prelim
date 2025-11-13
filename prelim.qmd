@@ -1,0 +1,24 @@
+---
+title: "Integrating Automated Agents Into Single-Engine Cockpit Operations: A Developmental Study"
+author: "Brock Rouser"
+filters:
+   - include-code-files
+format: 
+    revealjs:
+        incremental: false
+        self-contained: true
+        theme: custom.scss
+        logo: https://ceat.okstate.edu/marketing-and-communications/site_files/imgs/osu-primary-logo.png
+        footer: "Brock Rouser"
+---
+
+{{< include background/background.qmd >}}
+
+{{< include existing_work/existing_work.qmd >}}
+
+{{< include adaptive_automation/adaptive_automation.qmd >}}
+
+
+# Feedback
+
+## References

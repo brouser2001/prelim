@@ -1,0 +1,6 @@
+
+# Adaptive Automation
+{{< include adaptive_automation/overview.qmd >}}
+{{< include adaptive_automation/agentic.qmd >}}
+{{< include adaptive_automation/preliminary_results.qmd >}}
+{{< include adaptive_automation/plan.qmd >}}

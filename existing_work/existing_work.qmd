@@ -1,0 +1,6 @@
+
+# Existing Work
+{{< include existing_work/daq.qmd >}}
+{{< include existing_work/scirep.qmd >}}
+{{< include existing_work/workload.qmd >}}
+{{< include existing_work/sd.qmd >}}

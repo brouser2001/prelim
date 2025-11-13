@@ -1,0 +1,16 @@
+## How can we leverage sensors in evaluation
+
+Existing literature suggests a link between various physiological signals and operator states such as workload and situational awareness.
+With increasing accessability of sensor hardware and compute resources, studies suggest using time-series physiological sensors to quantify such
+operator states using sensors such as:
+
+::: {.incremental}
+- Eye Trackers
+- Heart Rate Monitors
+- Electroencephalogram (EEG)
+- Functional Near-Infrared Spectroscopy
+- Galvanic Skin Response
+
+- Such sensing modalities may allow for new aircraft design considerations and may be useful in evaluating new aircraft as physiological signals
+can provide a layer of objective data alongside self assessment techniques
+:::

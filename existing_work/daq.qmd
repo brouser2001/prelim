@@ -1,0 +1,57 @@
+# Physiological Data Acquisition
+
+## Challenges
+Utilizing a variety of physiological sensing modalities has several practical challenges that must be overcome to facilitate analysis for time-series data.
+
+::: {.incremental}
+- Software Dependencies
+    - Various sensor libraries provided by vendors require different operating systems, programming languages, and processor architecture (32 vs 64 bit)
+- Storage
+    - High frequency data from various sources should be stored in a common database in a common format
+    - Due to time-series nature of the data, synchronization is paramount to a high quality analysis
+- Scalability
+    - Physiological data collection in an ecological setting may require different sensors for different tasks and may even need to consider multiple operators
+:::
+
+## Challenges
+
+To overcome these challenges, a novel data acquisition system was developed utilizing open source tools and a distributed architecture.
+
+:::: {layout="[ 0.55, -0.05, 0.4 ]"}
+
+::: {.column}
+
+::: {.incremental}
+- Top layer uses a single control application to take in user input for testing configuration (which sensors, participant id#, etc.)
+- Listeners receive configuration and manage sensor processes
+- Sensors utilize MQTT Broker to route data to appropriate subscribers
+- Subscribers include
+    - Common time-series database (InfluxDB)
+    - Web based visualizations for real time dashboards (Grafana)
+    - Real time processing applications (Statistical models)
+:::
+
+:::
+
+::: {.column}
+architecture.png
+:::
+
+::::
+
+## Operational Realism Test Framework
+
+
+:::: {layout="[ 0.33, 0.33, 0.33 ]"}
+::: {.column}
+controlpanel.png
+:::
+
+::: {.column}
+camera.png
+:::
+
+::: {.column}
+physiodashboard.png
+:::
+::::

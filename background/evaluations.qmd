@@ -1,0 +1,21 @@
+## Summary Of Aircraft Evaluations 
+
+:::: {layout="[ 0.55, -0.05, 0.4 ]"}
+
+::: {.column width="60%"}
+\
+Aircraft design and development in commercial and military sectors has progressed at a rapid pace from powered flight in 1903 to modern automated and unmanned systems.
+Design evaluation in aviation is multidisciplinary including subsystem design evaluations up to overall system performance. Traditionally subsystems can be
+evaluated in isolation easily such as in wind tunnel testing and CFD simulations. 
+
+However, overall aircraft characteristics which stem from the combination
+of various subsystems is evaluated using test pilot feedback which is often limited due to sample size. Additionally, pilot feedback is usually captured via subjective
+self assessment which can be prone to bias and may not capture intricacies between individual aircraft subsystems.
+
+:::
+
+::: {.column width="40%"}
+![](media/timeline.png)
+:::
+
+:::: 

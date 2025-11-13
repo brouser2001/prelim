@@ -1,0 +1,20 @@
+
+## Physiological correlates of workload
+mention a/b testing in design evaluations
+
+## Bayesian Models
+```{.python include="scripts/bayes1.py"}
+#| echo: false
+#| output: true
+#| fig-cap: "Posterior distributions of slope and intercept"
+
+#%run scripts/bayes1.py
+```
+
+## models2
+```{.python include="scripts/bayes2.py"}
+#| echo: false
+#| output: true
+
+#%run scripts/bayes2.py
+```
