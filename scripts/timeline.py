@@ -59,7 +59,7 @@ def timelineplot(df):
     # Oldest date at the top
     ax.invert_yaxis()
 
-    ax.set_title("Aviation History", pad=10, loc="center", fontsize=20)
+    #ax.set_title("Aviation History", pad=10, loc="center", fontsize=20)
 
     plt.tight_layout()
     #plt.show()

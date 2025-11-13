@@ -1,43 +1,95 @@
-# Physiological Data Acquisition
-
-## Challenges
+## Data Acquisition Challenges
 Utilizing a variety of physiological sensing modalities has several practical challenges that must be overcome to facilitate analysis for time-series data.
 
-::: {.incremental}
+:::{.fragment .fade-left}
 - Software Dependencies
     - Various sensor libraries provided by vendors require different operating systems, programming languages, and processor architecture (32 vs 64 bit)
+:::
+
+:::{.fragment .fade-left}
 - Storage
     - High frequency data from various sources should be stored in a common database in a common format
     - Due to time-series nature of the data, synchronization is paramount to a high quality analysis
+:::
+
+
+:::{.fragment .fade-left}
 - Scalability
     - Physiological data collection in an ecological setting may require different sensors for different tasks and may even need to consider multiple operators
 :::
 
-## Challenges
+## Development History
 
-To overcome these challenges, a novel data acquisition system was developed utilizing open source tools and a distributed architecture.
+:::: {layout="[ 0.5, 0.1, 0.4 ]"}
 
-:::: {layout="[ 0.55, -0.05, 0.4 ]"}
+::: column
+:::{.fragment .fade-left}
+<div style="border: 2px solid #ccc; padding: 10px; border-radius: 8px; margin-right: 10px;">
 
-::: {.column}
+Initial LabVIEW Prototyping
 
-::: {.incremental}
-- Top layer uses a single control application to take in user input for testing configuration (which sensors, participant id#, etc.)
-- Listeners receive configuration and manage sensor processes
-- Sensors utilize MQTT Broker to route data to appropriate subscribers
-- Subscribers include
-    - Common time-series database (InfluxDB)
-    - Web based visualizations for real time dashboards (Grafana)
-    - Real time processing applications (Statistical models)
+:::: {layout="[50,50]"}
+::: column
+<img src="media/labview/EEG.png" style="width:90%; height:auto;" />
 :::
 
+::: column
+<img src="media/labview/cogstates.png" style="height:100%; width:auto;" />
+:::
+::::
+
+:::: {layout="[50,50]"}
+::: column
+<img src="media/labview/hmap.png" style="width:100%; height:auto;" />
 :::
 
-::: {.column}
-architecture.png
+::: column
+<img src="media/labview/eyetracking.png" style="width:100%; height:auto;" />
+:::
+::::
+</div>
+:::
+:::
+
+::: column
+:::{.fragment .fade-left}
+<div style="border: 2px solid #ccc; padding: 10px; border-radius: 8px;">
+Intermediate Version
+
+::: column
+<img src="media/intermediateVersion/cogstates.png" style="width:100%; height:auto;" />
+:::
+
+::: column
+<img src="media/intermediateVersion/rawEEG.png" style="width:100%; height:auto;" />
+:::
+</div>
+:::
 :::
 
 ::::
+
+## Current Software Architecture
+
+To overcome these challenges, a novel data acquisition system was developed utilizing open source tools and a distributed architecture.
+
+
+::: {.column}
+<div class="fragment" data-fragment-index="1">
+  - <span class="fragment" data-fragment-index="2">Top layer uses a single control application to take in user input for testing configuration (which sensors, participant id#, etc.)</span>
+  - <span class="fragment" data-fragment-index="3">Listeners receive configuration and manage sensor processes</span>
+  - <span class="fragment" data-fragment-index="4">Sensors utilize MQTT Broker to route data to appropriate subscribers</span>
+  - <span class="fragment" data-fragment-index="5">Subscribers include:</span>
+    - <span class="fragment" data-fragment-index="6">Common time-series database (InfluxDB)</span>
+    - <span class="fragment" data-fragment-index="7">Web based visualizations for real time dashboards (Grafana)</span>
+    - <span class="fragment" data-fragment-index="8">Real time processing applications (Statistical models)</span>
+</div>
+:::
+
+::: {.column}
+![Current Architecture](media/architecture.png){.fragment data-fragment-index="0"}
+:::
+
 
 ## Operational Realism Test Framework
 

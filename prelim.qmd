@@ -5,11 +5,13 @@ filters:
    - include-code-files
 format: 
     revealjs:
+        chalkboard: 
+            buttons: true
         incremental: false
-        self-contained: true
+        slide-number: true
         theme: custom.scss
         logo: https://ceat.okstate.edu/marketing-and-communications/site_files/imgs/osu-primary-logo.png
-        footer: "Brock Rouser"
+        transition: 'fade'
 ---
 
 {{< include background/background.qmd >}}
