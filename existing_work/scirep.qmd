@@ -1,3 +1,27 @@
+## Workload and Automation
 
-## Basic stats from scirep
-how can we optimize a model, what is the right model form?
+First battery of tests were focused on evaluating sensor capabilities and inferential modeling of multivariate physiological datasets. Experimental procedures focused on two independent variables.
+
+:::: {.columns}
+::: {.column}
+- Working memory load via secondary task (n-back)
+- Automation state (autopilot on/off)
+
+Data acquired included EEG, HRM, NASA-TLX, and flight metrics. The total dataset exported from the common time-series database contained ~145 million records.
+
+Initial frequentest analysis failed when modeling physiological data due to invalid assumptions of independence and linearity. Due to this, analysis utilized general multivariate mixed effects modeling with parameters optimized via Bayesian MCMC sampling.
+
+:::
+
+::: {.column}
+![*Experimental Flight Path*](media/acoko_path.png)
+:::
+::::
+
+## Results
+
+![*TLX Ranges*](media/tlxScores.png){width=40%}
+
+
+![*Experimental Flight Path*](media/table.png){width=50%}
+

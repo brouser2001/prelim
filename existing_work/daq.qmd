@@ -73,37 +73,43 @@ Intermediate Version
 
 To overcome these challenges, a novel data acquisition system was developed utilizing open source tools and a distributed architecture.
 
-
 ::: {.column}
-<div class="fragment" data-fragment-index="1">
-  - <span class="fragment" data-fragment-index="2">Top layer uses a single control application to take in user input for testing configuration (which sensors, participant id#, etc.)</span>
-  - <span class="fragment" data-fragment-index="3">Listeners receive configuration and manage sensor processes</span>
-  - <span class="fragment" data-fragment-index="4">Sensors utilize MQTT Broker to route data to appropriate subscribers</span>
-  - <span class="fragment" data-fragment-index="5">Subscribers include:</span>
-    - <span class="fragment" data-fragment-index="6">Common time-series database (InfluxDB)</span>
-    - <span class="fragment" data-fragment-index="7">Web based visualizations for real time dashboards (Grafana)</span>
-    - <span class="fragment" data-fragment-index="8">Real time processing applications (Statistical models)</span>
-</div>
+:::{.fragment data-fragment-index="1"}
+- Top layer uses a single control application to take in user input for testing configuration (which sensors, participant id#, etc.)
 :::
 
-::: {.column}
-![Current Architecture](media/architecture.png){.fragment data-fragment-index="0"}
+:::{.fragment data-fragment-index="2"}
+- Listeners receive configuration and manage sensor processes
+:::
+:::{.fragment data-fragment-index="3"}
+- Sensors utilize MQTT Broker to route data to appropriate subscribers
+:::
+:::{.fragment data-fragment-index="4"}
+- Subscribers include:
+    - Common time-series database (InfluxDB)
+    - Web based visualizations for real time dashboards (Grafana)
+    - Real time processing applications (Statistical models)
+:::
+:::
+
+::: {.column .fragment data-fragment-index="0"}
+![*Current Architecture*](media/architecture.png)
 :::
 
 
 ## Operational Realism Test Framework
 
-
-:::: {layout="[ 0.33, 0.33, 0.33 ]"}
-::: {.column}
-controlpanel.png
+:::: {.r-stack}
+:::{.fragment}
+<img src="media/ortfControl.png" width="900" height="600">
 :::
 
-::: {.column}
-camera.png
+
+:::{.fragment}
+<img src="media/flightsimCCTV.png" width="900" height="600">
 :::
 
-::: {.column}
-physiodashboard.png
+:::{.fragment}
+<img src="media/grafana.png" width="900" height="600">
 :::
 ::::

@@ -1,0 +1,49 @@
+
+## Physiological correlates of workload
+mention a/b testing in design evaluations
+
+## Bayesian Models
+```{.python include="scripts/bayes1.py"}
+#| echo: false
+#| output: true
+#| fig-cap: "Posterior distributions of slope and intercept"
+
+#%run scripts/bayes1.py
+```
+
+## models2
+```{.python include="scripts/bayes2.py"}
+#| echo: false
+#| output: true
+
+#%run scripts/bayes2.py
+```
+
+## Interactive Slides {.smaller transition="slide"}
+
+Turn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.
+
+```{.python}
+import pandas as pd
+import numpy as np
+
+# Create the actors DataFrame
+actors = pd.DataFrame({
+    'x': np.random.normal(size=100),
+    'y': np.random.normal(size=100)
+})
+ojs_define(actors=actors)
+```
+
+```{.ojs}
+//| panel: sidebar
+viewof talentWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: "talent weight" })
+viewof looksWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: "looks weight" })
+viewof minimum = Inputs.range([-2, 2], { value: 1, step: 0.01, label: "min fame" })
+```
+
+```{.ojs}
+//| panel: fill
+import { plotActors } from './actors.js';
+plotActors(actors, talentWeight, looksWeight, minimum)
+```

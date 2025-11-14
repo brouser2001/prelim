@@ -5,8 +5,7 @@
 ::: {.column width="60%"}
 \
 Aircraft design and development in commercial and military sectors has progressed at a rapid pace from powered flight in 1903 to modern automated and unmanned systems.
-Design evaluation in aviation is multidisciplinary including subsystem design evaluations up to overall system performance. Traditionally subsystems can be
-evaluated in isolation easily such as in wind tunnel testing and CFD simulations. 
+Design evaluation in aviation is multidisciplinary including individual subsystem design evaluations. Traditionally subsystems can be evaluated in isolation easily such as in wind tunnel testing and CFD simulations. 
 
 \
 However, overall aircraft characteristics which stem from the combination
@@ -16,7 +15,7 @@ self assessment which can be prone to bias and may not capture intricacies betwe
 :::
 
 ::: {.column width="40%"}
-![](media/timeline.png)
+![*Brief History*](media/timeline.png)
 :::
 
 :::: 
