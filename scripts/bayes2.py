@@ -21,6 +21,7 @@ with pm.Model() as model:
 
     trace = pm.sample(1000, return_inferencedata=True, progressbar=False)
     posterior_samples = az.extract(trace, var_names=["Intercept", "Slope"]).to_dataframe()
+    plt.figure(figsize=[6,3.3])
     plt.scatter(x, y, label="Observed data")
 
     for i in range(100):

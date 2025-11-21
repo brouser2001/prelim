@@ -31,7 +31,6 @@ with pm.Model() as model:
     fig = px.histogram(
     posterior_df.melt(var_name="Parameter", value_name="Value"),
     x="Value", color="Parameter", marginal="box", opacity=0.6,
-    nbins=40, barmode="overlay", title="Posterior Distributions"
-    )
-    fig.update_layout(template="plotly_white")
+    nbins=40, barmode="overlay", title="Posterior Distributions")
+    fig.update_layout(template="plotly_white",width=550,height=300)
     fig.show()
