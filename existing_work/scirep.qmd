@@ -18,10 +18,72 @@ Initial frequentest analysis failed when modeling physiological data due to inva
 :::
 ::::
 
+## Linear Modeling
+Univariate and multivariate linear models can be optimized via ordinary least squares fitting 
+
+
+$$
+Y= \beta X + \epsilon
+$$
+
+
+$$
+\beta = (X^TX)^{-1}X^Ty
+$$
+
+:::{.fragment}
+However, this requires several assumptions which are dependant on data:
+:::
+
+:::{.incremental}
+- Normality in residuals
+- Linear parameters
+- No multicolinearity
+- homoscedasticity (constant residual variance )
+:::
+
+:::{.fragment}
+Violating these assumptions will result in a model that doesn't fit well
+:::
+
+## Bayesian Solution
+
+Bayes' theorem is expressed as:
+$$
+P(A|B)=\frac{P(B|A) \cdot P(A)}{P(B)}
+$$
+
+:::{.fragment}
+Considering our model parameters as a distribution allows for estimation via application of this theorem.
+
+$$
+P(\beta | y,X)=\frac{P(y| \beta, X) \cdot P(\beta | X)}{P(y | X)}
+$$
+:::
+
+:::: {.columns }
+::: {.column .fragment}
+```{python include="scripts/bayes1.py"}
+#| echo: false
+#| output: true
+
+%run scripts/bayes1.py
+```
+:::
+::: {.column .fragment}
+```{python include="scripts/bayes2.py"}
+#| echo: false
+#| output: true
+
+%run scripts/bayes2.py
+```
+
+:::
+::::
+
 ## Results
 
 ![*TLX Ranges*](media/tlxScores.png){width=40%}
 
-
-![*Experimental Flight Path*](media/table.png){width=50%}
+![*Mean Parameters From Distributions*](media/table.png){width=50%}
 
