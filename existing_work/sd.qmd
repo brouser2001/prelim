@@ -1,2 +1,66 @@
-
 ## Spatial Disorientation
+
+Continuing experimentation focused on the concept of spatial disorientation (SD) in aviation. This study investigated the physiological and cognitive effects of an induced SD illusion during simulated flight using multimodal sensor data. 
+
+:::: {.columns}
+::: {.column width="30%"}
+- Visual and vestibular illusions administered via motion decoupling
+- Data acquired included EEG, HRM, NASA-TLX, and flight metrics
+
+A similar analysis approach was utilized after frequentist modeling checks failed. Additionally, this study focused on exploring different priors for model parameters 
+:::
+::: {.column width="65%"}
+![*Fight Simulator*](media/SD/Figure1.png)
+:::
+::::
+
+## Model Checks
+
+:::: {.columns}
+::: {.column width="30%"}
+\
+
+A limitation of Bayesian General Linear Modeling is the potential bias introduced when using improper priors. All channels passed statistical tests for univariate normality, but failed for multivariate normality.
+
+Two families of distributions were used as priors for HR/RR and posterior predictive checks were conducted to evaluate model fit.
+:::
+
+::: {.column width="70%"}
+![](media/SD/Figure3.png){.absolute top="200" left="400" width="60%" height="auto"}
+:::
+::::
+
+## Model Comparison
+
+:::: {.columns}
+::: {.column width="30%"}
+\
+
+Subsets of EEG/Lifemonitor response variables compared to combined set and use of residual correlation estimated evaluated
+
+- ELPD difference indicates how closely two models differ in their posterior predictions 
+- Best model indicated by 0 ELPD difference
+- SE difference indicates the difference in standard error between two models
+:::
+
+::: {.column width="70%"}
+![](media/SD/comparison.png){.absolute top="200" left="400" width="60%" height="auto"}
+:::
+::::
+
+## Final Model Parameters {}
+
+:::: {.columns}
+::: {.column width="40%"}
+\
+
+Final model utilized Gaussian priors to allow for estimation of residual covariance. Values of parameters indicate the normalized change in the response variable during SD illusions.
+
+- Horizontal lines indicates mean and 1st quantile for each channel 
+- X-axis width for each channel indicates likelihood of the parameter value
+- Captures variance and uncertainty in physiological channels changing with periods of SD illusions
+:::
+::: {.column}
+![](media/SD/Figure4.png){.absolute top="200" left="500" width="50%" height="auto"}
+:::
+::::

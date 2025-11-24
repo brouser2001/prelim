@@ -5,8 +5,9 @@ filters:
    - include-code-files
 format: 
     revealjs:
-        chalkboard: 
-            buttons: true
+        #chalkboard: 
+        #    buttons: true
+        self-contained: true
         incremental: false
         slide-number: true
         theme: custom.scss
@@ -20,6 +21,7 @@ format:
 
 {{< include adaptive_automation/adaptive_automation.qmd >}}
 
+## Academic Products
 
 # Feedback
 

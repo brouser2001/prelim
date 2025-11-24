@@ -1,11 +1,12 @@
 ## Physiological Correlates of Cognitive States
+\
 
 The developed capability to collect and analyze physiological data in ecological environments poses many challenges when considering real-time applications. The two experiments conducted showcase the confounding nature of EEG responses across cognitive states such as mental workload, engagement, and spatial/situational awareness. The modeling displayed in these results highlights how the complicated nature of physiological datasets lends itself to equally complex modeling techniques. Complex algorithms have become more ubiquitous and may be able to lend predictability over readability. Such models include:
 
 
 :::: {columns}
 :::{.column width="33%" .fragment .fade-up}
-<img src="https://wires.onlinelibrary.wiley.com/cms/asset/b0e2a70c-c5a2-418a-8f9b-9a6952dd5227/mfig001.jpg" width="auto" height="200">
+<img src="media/svm.png" width="auto" height="200">
 <figcaption>*Mammone, A., Turchi, M., and Cristianini, N*</figcaption>
 :::
 
@@ -15,7 +16,7 @@ The developed capability to collect and analyze physiological data in ecological
 :::
 
 :::{.column width="33%" .fragment .fade-up}
-<img src="https://dl.acm.org/cms/10.1145/3505244/asset/aa4cc960-7359-4b5b-b57d-2e325ae2e1a7/assets/images/large/csur-2021-0095-f03.jpg" width="auto" height="200">
+<img src="media/transformer.png" width="auto" height="200">
 <figcaption>*Khan, S., Naseer, M., Hayat, M., et. al.*</figcaption>
 :::
 ::::

@@ -9,7 +9,7 @@ First battery of tests were focused on evaluating sensor capabilities and infere
 
 Data acquired included EEG, HRM, NASA-TLX, and flight metrics. The total dataset exported from the common time-series database contained ~145 million records.
 
-Initial frequentest analysis failed when modeling physiological data due to invalid assumptions of independence and linearity. Due to this, analysis utilized general multivariate mixed effects modeling with parameters optimized via Bayesian MCMC sampling.
+Initial frequentist analysis failed when modeling physiological data due to invalid assumptions of independence and linearity. Due to this, analysis utilized general multivariate mixed effects modeling with parameters optimized via Bayesian MCMC sampling.
 
 :::
 
@@ -63,7 +63,7 @@ $$
 
 :::: {.columns }
 ::: {.column .fragment}
-```{python include="scripts/bayes1.py"}
+```{.python include="scripts/bayes1.py"}
 #| echo: false
 #| output: true
 
@@ -71,7 +71,7 @@ $$
 ```
 :::
 ::: {.column .fragment}
-```{python include="scripts/bayes2.py"}
+```{.python include="scripts/bayes2.py"}
 #| echo: false
 #| output: true
 
