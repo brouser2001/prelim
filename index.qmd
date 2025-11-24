@@ -7,7 +7,7 @@ format:
     revealjs:
         #chalkboard: 
         #    buttons: true
-        self-contained: true
+        embed-resources: true
         incremental: false
         slide-number: true
         theme: custom.scss

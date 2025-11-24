@@ -63,19 +63,20 @@ $$
 
 :::: {.columns }
 ::: {.column .fragment}
-```{python include="scripts/bayes1.py"}
+```{python}
 #| echo: false
 #| output: true
-
-%run scripts/bayes1.py
+#| 
+import scripts.bayes1 as b1
+b1.main() 
 ```
 :::
 ::: {.column .fragment}
-```{python include="scripts/bayes2.py"}
+```{python}
 #| echo: false
 #| output: true
-
-%run scripts/bayes2.py
+import scripts.bayes2 as b2
+b2.main() 
 ```
 
 :::

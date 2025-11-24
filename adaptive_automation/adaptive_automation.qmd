@@ -4,4 +4,5 @@
 {{< include adaptive_automation/agentic.qmd >}}
 {{< include adaptive_automation/preliminary_results.qmd >}}
 {{< include adaptive_automation/plan.qmd >}}
+{{< include adaptive_automation/timeline.qmd >}}
 {{< include adaptive_automation/products.qmd >}}
