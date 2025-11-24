@@ -63,7 +63,7 @@ $$
 
 :::: {.columns }
 ::: {.column .fragment}
-```{.python include="scripts/bayes1.py"}
+```{python include="scripts/bayes1.py"}
 #| echo: false
 #| output: true
 
@@ -71,7 +71,7 @@ $$
 ```
 :::
 ::: {.column .fragment}
-```{.python include="scripts/bayes2.py"}
+```{python include="scripts/bayes2.py"}
 #| echo: false
 #| output: true
 

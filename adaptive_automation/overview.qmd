@@ -1,7 +1,5 @@
 ## What is adaptive vs adaptable automation
 
-\
-
 ::::{.columns}
 :::{.column}
 The National Highway Traffic Safety Administration has formalized levels of autonomy in vehicles. In the most extreme examples of autonomous systems such as full self driving cars the level of autonomy is decided by the driver. This is an example of adaptable automation.

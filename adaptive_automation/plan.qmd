@@ -1,2 +1,81 @@
+## Plan and Proposal
 
-## Plan and proposal
+:::::{.column}
+::::: {.r-stack }
+::::{.fragment .fade-out data-fragment-index="3" }
+The overarching gaps in literature this contribution seeks to fill are the following
+
+:::{.fragment data-fragment-index="0"}
+- What are the practical limitations to implementing adaptive automation in aviation?
+    - Display design
+    - Trust in automation
+    - Tradeoffs between workload an automation
+:::
+
+:::{.fragment data-fragment-index="1"}
+- Is adaptive automation better than adaptable?
+:::
+
+:::{.fragment data-fragment-index="2"}
+- Should the level of autonomy be constrained? And if so, by how much?
+:::
+::::
+
+
+::::{.fragment .fade-in data-fragment-index="3"}
+The proposed methodology for this work includes the following
+
+
+:::{.fragment data-fragment-index="6" .highlight-red}
+:::{.fragment data-fragment-index="4"}
+- Collection of contextual and physiological data in a variety of environments
+    - Flight simulators
+    - Multi-Attribute Task Battery (MATB)
+    - Other virtual environments
+:::
+:::
+
+
+:::{.fragment data-fragment-index="7" .highlight-red}
+:::{.fragment data-fragment-index="5"}
+- Development and usage of deep learning models trained on physiological data
+    - Bayesian optimization
+    - Multiclass outputs
+    - Hybrid models
+:::
+:::
+
+::::
+:::::
+:::::
+
+
+:::::{.column}
+::::: {.r-stack }
+:::{.fragment data-fragment-index="6"}
+Project Risks
+
+\
+
+
+:::{.fragment data-fragment-index="6"}
+- Data Collection
+    - IRB Logistics
+    - Sample size
+    - Normalization
+:::
+
+:::{.fragment data-fragment-index="7"}
+
+\ 
+
+- Training And Development
+    - Memory/compute power
+    - Vanishing/exploding gradients
+    - Overfitting 
+    - Prediction speed for real-time application
+:::
+:::
+
+:::::
+:::::

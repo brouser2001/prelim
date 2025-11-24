@@ -2,6 +2,13 @@
 ## Physiological correlates of workload
 mention a/b testing in design evaluations
 
+
+::::{.fragment .fade-out data-fragment-index="1"}
+:::{.fragment .fade-in data-fragment-index="0"}
+temporary note
+:::
+::::
+
 ## Bayesian Models
 ```{.python include="scripts/bayes1.py"}
 #| echo: false

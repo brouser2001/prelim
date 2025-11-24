@@ -21,8 +21,6 @@ format:
 
 {{< include adaptive_automation/adaptive_automation.qmd >}}
 
-## Academic Products
-
 # Feedback
 
 ## References

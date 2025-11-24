@@ -5,6 +5,6 @@ Due to the rise of agentic AI capable of taking in information, planning, and ex
 The use of physiological data may benefit the development of such systems. Leveraging ecologically valid data may both benefit developers as an additional real-time stream of pilot state as well as evaluators who need to be able to assess whether an autonomous system is actually helpful from a human factors perspective.
 
 <div style="text-align: center;">
-  <img src="media/preliminary-time-series.png" height="400">
+  <img src="media/preliminary-time-series.png" height="360">
   <figcaption>*Preliminary Workload Model*</figcaption>
 </div>

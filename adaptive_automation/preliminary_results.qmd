@@ -1,2 +1,43 @@
 ## Preliminary Results
 
+:::: {.columns}
+::: {.column}
+
+- Existing work showed statistical significance of processed time-series data
+    - Power Spectral Densities
+    - Heart/Respiratory Rate
+    - Heart Rate Variability
+
+
+:::{.fragment  data-fragment-index="1"}
+- By letting a deep learning model analyze the raw data, it can infer these processed features naturally and draw significance
+:::
+
+:::{.fragment  data-fragment-index="2"}
+- A flaw in previous DAQ version caused significant data loss for preliminary model
+:::
+
+:::{.fragment  data-fragment-index="3"}
+- New EEG data is currently being collected. A cleaning pipeline using independent component analysis is currently under construction
+:::
+:::
+
+::: {.column}
+:::: {.r-stack}
+
+:::{.fragment .fade-out data-fragment-index="2"}
+<img src="media/nova_1.2_resnet18.png" width="250">
+:::
+
+:::{.fragment  data-fragment-index="2"}
+<img src="media/rawEEG.png" width="450">
+:::
+
+:::{.fragment data-fragment-index="3"}
+<img src="media/cleanEEG.png" width="450">
+:::
+
+:::
+::::
+
+::::
