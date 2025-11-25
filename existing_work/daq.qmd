@@ -18,6 +18,33 @@ Utilizing a variety of physiological sensing modalities has several practical ch
     - Physiological data collection in an ecological setting may require different sensors for different tasks and may even need to consider multiple operators
 :::
 
+## Current Software Architecture
+
+To overcome these challenges, a novel data acquisition system was developed utilizing open source tools and a distributed architecture.
+
+::: {.column}
+:::{.fragment data-fragment-index="1"}
+- Top layer uses a single control application to take in user input for testing configuration (which sensors, participant id#, etc.)
+:::
+
+:::{.fragment data-fragment-index="2"}
+- Listeners receive configuration and manage sensor processes
+:::
+:::{.fragment data-fragment-index="3"}
+- Sensors utilize MQTT Broker to route data to appropriate subscribers
+:::
+:::{.fragment data-fragment-index="4"}
+- Subscribers include:
+    - Common time-series database (InfluxDB)
+    - Web based visualizations for real time dashboards (Grafana)
+    - Real time processing applications (Statistical models)
+:::
+:::
+
+::: {.column .fragment data-fragment-index="0"}
+![*Current Architecture*](media/architecture.png)
+:::
+
 ## Development History
 
 :::: {layout="[ 0.5, 0.1, 0.4 ]"}
@@ -68,34 +95,6 @@ Intermediate Version
 :::
 
 ::::
-
-## Current Software Architecture
-
-To overcome these challenges, a novel data acquisition system was developed utilizing open source tools and a distributed architecture.
-
-::: {.column}
-:::{.fragment data-fragment-index="1"}
-- Top layer uses a single control application to take in user input for testing configuration (which sensors, participant id#, etc.)
-:::
-
-:::{.fragment data-fragment-index="2"}
-- Listeners receive configuration and manage sensor processes
-:::
-:::{.fragment data-fragment-index="3"}
-- Sensors utilize MQTT Broker to route data to appropriate subscribers
-:::
-:::{.fragment data-fragment-index="4"}
-- Subscribers include:
-    - Common time-series database (InfluxDB)
-    - Web based visualizations for real time dashboards (Grafana)
-    - Real time processing applications (Statistical models)
-:::
-:::
-
-::: {.column .fragment data-fragment-index="0"}
-![*Current Architecture*](media/architecture.png)
-:::
-
 
 ## Operational Realism Test Framework
 

@@ -39,11 +39,11 @@ However, this requires several assumptions which are dependant on data:
 - Normality in residuals
 - Linear parameters
 - No multicolinearity
-- homoscedasticity (constant residual variance )
+- Homoscedasticity (constant residual variance )
 :::
 
 :::{.fragment}
-Violating these assumptions will result in a model that doesn't fit well
+Assumptions such as these can be validated via statistical tests such as Mardia's skewness/kurtosis, VIF analysis, Breusch-Pagan, etc. Violating these assumptions may result in a model that does not fit well.
 :::
 
 ## Bayesian Solution
@@ -63,7 +63,7 @@ $$
 
 :::: {.columns }
 ::: {.column .fragment}
-```{python}
+```{.python}
 #| echo: false
 #| output: true
 #| 
@@ -72,7 +72,7 @@ b1.main()
 ```
 :::
 ::: {.column .fragment}
-```{python}
+```{.python}
 #| echo: false
 #| output: true
 import scripts.bayes2 as b2

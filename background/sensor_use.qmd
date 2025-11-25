@@ -1,18 +1,61 @@
-## leveraging Sensors In Evaluation
+## Leveraging Sensors In Evaluation
 
+:::::{.column width="100%"}
+::::: {.r-stack }
+::::{.fragment .fade-out data-fragment-index="5" }
 Existing literature suggests a link between various physiological signals and operator states such as workload and situational awareness.
 With increasing accessability of sensor hardware and compute resources, studies suggest using time-series physiological sensors to quantify such
 operator states using sensors such as:
 
-::: {.incremental}
+:::{.fragment data-fragment-index="0"}
 - Eye Trackers
-- Heart Rate Monitors (HRM)
-- Electroencephalogram (EEG)
-- Functional Near-Infrared Spectroscopy (fNIRS)
-- Galvanic Skin Response
 :::
 
-:::{.fragment .fade-up}
-Such sensing modalities may allow for new aircraft design considerations and may be useful in evaluating new aircraft as physiological signals
-can provide a layer of objective data alongside self assessment techniques.
+:::{.fragment data-fragment-index="1"}
+- Heart Rate Monitors (HRM)
+:::
+
+:::{.fragment data-fragment-index="2"}
+- Electroencephalogram (EEG)
+:::
+:::{.fragment data-fragment-index="3"}
+- Functional Near-Infrared Spectroscopy (fNIRS)
+:::
+
+:::{.fragment data-fragment-index="4"}
+- Galvanic Skin Response
+:::
+::::
+
+
+::::{.fragment .fade-in data-fragment-index="5"}
+Quantifying a pilot's physiological state using such sensing modalities may provide an additional layer of data for engineers to base decisions off of. Current pilot evaluation metrics rely on self assessment tools such as:
+
+:::{.fragment data-fragment-index="6"}
+- NASA Task Load Index (perceived workload)
+:::
+
+:::{.fragment data-fragment-index="7"}
+- Cooper-Harper Handling Qualities Rating (aircraft handling characteristics)
+:::
+
+:::{.fragment data-fragment-index="8"}
+- Situational Awareness Rating Technique (situational awareness)
+:::
+
+
+:::{.fragment .fade-up data-fragment-index="9"}
+Such metrics derived from these self assessment surveys can be difficult to capture in a time-efficient manner and may be difficult to draw statistical significance from due to potentially small sample sizes.
+
+As organizations such as the US Navy seek to tune aircraft to fine degrees and future AI adjacent methods potentially being able to derive aircraft dynamics, additional layers of objective data become paramount. This data also furthers the usefulness of simulator based validation.
+:::
+
+::::
+:::::
+:::::
+
+::: aside
+Y. Dong, J. Tao, Y. Zhang, W. Lin and J. Ai, "Deep Learning in Aircraft Design, Dynamics, and Control: Review and Prospects," in IEEE Transactions on Aerospace and Electronic Systems, vol. 57, no. 4, pp. 2346-2368, Aug. 2021, doi: 10.1109/TAES.2021.3056086. keywords: {Aircraft;Aerodynamics;Feature extraction;Neurons;Biological neural networks;Training;Deep learning;Aircraft design;control;data-driven;deep learning (DL);dynamics;machine learning}, 
+
+Paul, Ryan & Rhinehart, Matthew. (2020). Exploring Pilot Workload Using Inceptor Time Histories. 1-27. 10.4050/F-0076-2020-16386. 
 :::

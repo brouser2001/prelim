@@ -8,7 +8,7 @@ The rise in popularity of complicated autonomous systems has shifted focus onto 
 The interplay between automation, mental workload, and situational awareness has become a topic of scrutiny as literature suggests that increased automation can result in an overall decrease in operator performance.
 
 \
-With readily available sensors and advanced modeling techniques, some researchers have proposed frameworks to increase pilot awareness by adapting the amount of automation in the cockpit by using various time series data channels to quantify cognative states.
+With readily available sensors and advanced modeling techniques, some researchers have proposed frameworks to increase pilot awareness by adapting the amount of automation in the cockpit by using various time series data channels to quantify conative states.
 :::
 
 ::: {.column width="40%"}
