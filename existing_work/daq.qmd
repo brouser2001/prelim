@@ -99,7 +99,7 @@ Intermediate Version
 ## Operational Realism Test Framework
 
 :::: {.r-stack}
-:::{.fragment}
+:::{.fragment .fade-out}
 <img src="media/ortfControl.png" width="900" height="600">
 :::
 

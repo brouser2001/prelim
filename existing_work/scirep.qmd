@@ -1,4 +1,4 @@
-## Workload and Automation
+## Workload And Automation
 
 First battery of tests were focused on evaluating sensor capabilities and inferential modeling of multivariate physiological datasets. Experimental procedures focused on two independent variables.
 
@@ -84,7 +84,43 @@ b2.main()
 
 ## Results
 
-![*TLX Ranges*](media/tlxScores.png){width=40%}
+::::{.r-stack}
+:::{.fragment .fade-out fragment-index="0"} 
 
-![*Mean Parameters From Distributions*](media/table.png){width=50%}
 
+<div style="text-align: center;">
+<img src="media/tlxScores.png" height="250">
+<figcaption>*TLX Ranges*</figcaption>
+
+<img src="media/table.png" height="250">
+<figcaption>*Mean Parameters From Distributions*</figcaption>
+</div>
+
+:::
+
+::::{.fragment fragment-index="0"}
+Takeaways
+
+
+:::{.fragment fragment-index="1"}
+- For a sample size of 5 participants under 4 different experimental conditions TLX didn't indicate any statistical significant change across conditions even when included as a predictor in the model.
+:::
+
+:::{.fragment fragment-index="2"}
+- Physiological metrics show meaningful change across workload and automation conditions
+    - HRV increases across test conditions but decreases within flight phases
+    - HR/RR shows inverse relationship to HRV which is expected
+    - MWL indicates statistically significant relationship but is likely designed for working memory
+:::
+
+:::{.fragment fragment-index="3"}
+- Incorporating channels such as power spectral densities for EEG electrodes may provide additional insights but increases model complexity
+:::
+
+:::{.fragment fragment-index="4"}
+- These findings support time-series analysis such as feature extraction in order to better infer what is significant across participants
+:::
+
+::::
+
+::::

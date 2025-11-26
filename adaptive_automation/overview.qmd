@@ -1,4 +1,4 @@
-## What is adaptive vs adaptable automation
+## Adaptive vs Adaptable Automation
 
 ::::{.columns}
 :::{.column}

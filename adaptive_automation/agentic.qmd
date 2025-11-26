@@ -1,8 +1,19 @@
-## Want to talk about agentic vs advisory system and levels of autonomy
+## Agentic vs Advisory Systems And Levels of Autonomy
 
 Due to the rise of agentic AI capable of taking in information, planning, and executing tasks, it may not be long until such systems are implemented in the aviation sector. 
 
 The use of physiological data may benefit the development of such systems. Leveraging ecologically valid data may both benefit developers as an additional real-time stream of pilot state as well as evaluators who need to be able to assess whether an autonomous system is actually helpful from a human factors perspective.
+
+<div style="text-align: center;">
+  <img src="media/ModelDisplay.png" height="300">
+  <figcaption>*Preliminary Advisory Display*</figcaption>
+</div>
+
+## Current Capability
+
+A preliminary deep learning model was built and deployed in the ATRC flight simulator. Such model development is iterative and should consider how underlying physiological channels should be cleaned and integration of contextual information.
+
+The capability being developed allows for previously theorized agentic and adaptive workload frameworks to be tested and evaluated in real time. 
 
 <div style="text-align: center;">
   <img src="media/preliminary-time-series.png" height="360">
