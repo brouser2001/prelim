@@ -99,16 +99,16 @@ Intermediate Version
 ## Operational Realism Test Framework
 
 :::: {.r-stack}
-:::{.fragment .fade-out}
+:::{.fragment .fade-out fragment-index="0"}
 <img src="media/ortfControl.png" width="900" height="600">
 :::
 
 
-:::{.fragment}
+:::{.fragment .fade-in fragment-index="0"}
 <img src="media/flightsimCCTV.png" width="900" height="600">
 :::
 
-:::{.fragment}
+:::{.fragment .fade-in}
 <img src="media/grafana.png" width="900" height="600">
 :::
 ::::

@@ -1,11 +1,11 @@
-## Agentic vs Advisory Systems And Levels of Autonomy
+## Agentic vs Advisory Systems and Levels of Autonomy
 
 Due to the rise of agentic AI capable of taking in information, planning, and executing tasks, it may not be long until such systems are implemented in the aviation sector. 
 
 The use of physiological data may benefit the development of such systems. Leveraging ecologically valid data may both benefit developers as an additional real-time stream of pilot state as well as evaluators who need to be able to assess whether an autonomous system is actually helpful from a human factors perspective.
 
 <div style="text-align: center;">
-  <img src="media/ModelDisplay.png" height="300">
+  <img src="media/modelDisplay.png" height="300">
   <figcaption>*Preliminary Advisory Display*</figcaption>
 </div>
 

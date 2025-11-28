@@ -1,4 +1,4 @@
-## Leveraging Sensors In Evaluation
+## Leveraging Sensors in Evaluation
 
 :::::{.column width="100%"}
 ::::: {.r-stack }
@@ -8,54 +8,49 @@ With increasing accessability of sensor hardware and compute resources, studies 
 operator states using sensors such as:
 
 :::{.fragment data-fragment-index="0"}
-- Eye Trackers
+- Eye Trackers [@eyetrackingHelicopter]
 :::
 
 :::{.fragment data-fragment-index="1"}
-- Heart Rate Monitors (HRM)
+- Heart Rate Monitors (HRM) [@hrv]
 :::
 
 :::{.fragment data-fragment-index="2"}
-- Electroencephalogram (EEG)
+- Electroencephalogram (EEG) [@EEGWorkloadAviation]
 :::
 :::{.fragment data-fragment-index="3"}
-- Functional Near-Infrared Spectroscopy (fNIRS)
+- Functional Near-Infrared Spectroscopy (fNIRS) [@fnirsPilotWorkload]
 :::
 
 :::{.fragment data-fragment-index="4"}
-- Galvanic Skin Response
+- Galvanic Skin Response [@gsrAviation]
 :::
 ::::
 
 
 ::::{.fragment .fade-in data-fragment-index="5"}
-Quantifying a pilot's physiological state using such sensing modalities may provide an additional layer of data for engineers to base decisions off of. Current pilot evaluation metrics rely on self assessment tools such as:
+Quantifying a pilot's physiological state using such sensing modalities may provide an additional layer of data for engineers to base decisions off of [@subjectiveVsPhysio]. Current pilot evaluation metrics rely on self assessment tools such as:
 
 :::{.fragment data-fragment-index="6"}
-- NASA Task Load Index (perceived workload)
+- NASA Task Load Index (perceived workload) [@tlx20years]
 :::
 
 :::{.fragment data-fragment-index="7"}
-- Cooper-Harper Handling Qualities Rating (aircraft handling characteristics)
+- Cooper-Harper Handling Qualities Rating (aircraft handling characteristics) [@cooperHarper50]
 :::
 
 :::{.fragment data-fragment-index="8"}
-- Situational Awareness Rating Technique (situational awareness)
+- Situational Awareness Rating Technique (situational awareness) [@sart]
 :::
 
 
 :::{.fragment .fade-up data-fragment-index="9"}
-Such metrics derived from these self assessment surveys can be difficult to capture in a time-efficient manner and may be difficult to draw statistical significance from due to potentially small sample sizes.
+Such metrics derived from these self assessment surveys can be difficult to capture in a time-efficient manner and may be difficult to draw statistical significance from due to potentially small sample sizes [@tlxFailure].
 
-As organizations such as the US Navy seek to tune aircraft to fine degrees and future AI adjacent methods potentially being able to derive aircraft dynamics, additional layers of objective data become paramount. This data also furthers the usefulness of simulator based validation.
+As organizations such as the US Navy seek to tune aircraft to fine degrees and future AI adjacent methods potentially being able to derive aircraft dynamics, additional layers of objective data become paramount [@InceptorWorkload; @AircraftDesignDeepLearning,]. This data also furthers the usefulness of simulator based validation.
 :::
 
 ::::
 :::::
 :::::
 
-::: aside
-Y. Dong, J. Tao, Y. Zhang, W. Lin and J. Ai, "Deep Learning in Aircraft Design, Dynamics, and Control: Review and Prospects," in IEEE Transactions on Aerospace and Electronic Systems, vol. 57, no. 4, pp. 2346-2368, Aug. 2021, doi: 10.1109/TAES.2021.3056086. keywords: {Aircraft;Aerodynamics;Feature extraction;Neurons;Biological neural networks;Training;Deep learning;Aircraft design;control;data-driven;deep learning (DL);dynamics;machine learning}, 
-
-Paul, Ryan & Rhinehart, Matthew. (2020). Exploring Pilot Workload Using Inceptor Time Histories. 1-27. 10.4050/F-0076-2020-16386. 
-:::

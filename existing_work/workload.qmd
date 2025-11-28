@@ -7,16 +7,16 @@ The developed capability to collect and analyze physiological data in ecological
 :::: {columns}
 :::{.column width="33%" .fragment .fade-up}
 <img src="media/svm.png" width="auto" height="200">
-<figcaption>*Mammone, A., Turchi, M., and Cristianini, N*</figcaption>
+<figcaption>*Support Vector Machines [@svm]*</figcaption>
 :::
 
 :::{.column width="33%" .fragment .fade-up}
 <img src="media/1_CNN-1.png" width="auto" height="200">
-<figcaption>*Qin, Z.,Yu F.,Liu, C., and Chen, X.*</figcaption>
+<figcaption>*Convolutional Neural Networks [@cnn]*</figcaption>
 :::
 
 :::{.column width="33%" .fragment .fade-up}
 <img src="media/transformer.png" width="auto" height="200">
-<figcaption>*Khan, S., Naseer, M., Hayat, M., et. al.*</figcaption>
+<figcaption>*Vision Transformers [@visionTransformers]*</figcaption>
 :::
 ::::

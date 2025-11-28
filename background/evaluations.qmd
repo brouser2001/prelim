@@ -1,4 +1,4 @@
-## Summary Of Aircraft Evaluations 
+## Summary of Aircraft Evaluations 
 
 :::: {layout="[ 0.55, -0.05, 0.4 ]"}
 
@@ -15,7 +15,8 @@ self assessment which can be prone to bias and may not capture intricacies betwe
 :::
 
 ::: {.column width="40%"}
-![*Brief History*](media/timeline.png)
+![*Brief History*[@wiener1988human]](media/timeline.png)
+
 :::
 
 :::: 

@@ -8,7 +8,7 @@ Adaptive automation refers to autonomous systems in which the system itself adju
 :::
 
 :::{.column}
-![*Anderson E, Fannin T, Nelson B.*](media/autonomy.png){width=80%}
+![*Levels of Autonomy [@aviationAutonomy]*](media/autonomy.png){width=80%}
 :::
 ::::
 

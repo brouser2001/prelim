@@ -3,6 +3,8 @@ title: "Integrating Automated Agents Into Single-Engine Cockpit Operations: A De
 author: "Brock Rouser"
 filters:
    - include-code-files
+bibliography: references.bib
+csl: apa-numeric-superscript-brackets.csl
 format: 
     revealjs:
         #chalkboard: 
@@ -23,4 +25,4 @@ format:
 
 # Feedback
 
-## References
+## References {.refs .small}

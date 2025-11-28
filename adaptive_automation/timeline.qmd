@@ -1,2 +1,35 @@
 ## Timeline
 
+::: {.columns}
+::: {.column}
+
+1. Finish collecting flight simulator data
+    - Conclude: end-February, 2026
+
+2. New model training
+    - Begin: end-February, 2026
+    - Conclude: end-March, 2026
+
+3. Deploy model in flight simulator 
+    - Begin: end-March, 2026
+    - Conclude: end-May, 2026
+
+4. Evaluate and publish experimental results
+    - Begin: end-May, 2026
+    - Conclude: end-June, 2026
+:::
+::: {.column}
+
+5. Begin iterative model development
+    - Begin: July, 2026
+    - Conclude: September, 2026
+
+6. Conduct experimental model validation and compare with previous results
+    - Begin: September, 2026
+    - Conclude: end-September, 2026
+
+7. Compile results and evaluate existing adaptive automation frameworks
+    - Begin: October, 2026
+    - Conclude: December, 2026 
+:::
+::: 

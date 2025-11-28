@@ -1,4 +1,4 @@
-## Workload And Automation
+## Workload and Automation
 
 First battery of tests were focused on evaluating sensor capabilities and inferential modeling of multivariate physiological datasets. Experimental procedures focused on two independent variables.
 

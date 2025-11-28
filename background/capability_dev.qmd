@@ -14,11 +14,11 @@ With readily available sensors and advanced modeling techniques, some researcher
 ::: {.column width="40%"}
 
 :::{.fragment .fade-left}
-![Taheri Gorji, H., Wilson, N., VanBree, J. et al](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-023-29647-0/MediaObjects/41598_2023_29647_Fig3_HTML.png?as=webp)
+![*Traditional Modeling [@tradModel]*](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-023-29647-0/MediaObjects/41598_2023_29647_Fig3_HTML.png?as=webp)
 :::
 
 :::{.fragment .fade-left}
-![Yiu,C., Y., Ng, K., K., H., Li, Q., and Yuan, X.](media/models3_2.png)
+![*Deep Learning [@EEGML]*](media/models3_2.png)
 :::
 
 :::
