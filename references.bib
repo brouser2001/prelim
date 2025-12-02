@@ -213,3 +213,69 @@
 	doi          = {10.1109/DASC.2018.8569280},
 	keywords     = {Task analysis;Automation;Aircraft navigation;Monitoring;Airplanes;Aerospace control}
 }
+
+@Article{litReview,
+AUTHOR = {Kyle, Ainsley R. and Rouser, Brock and Paul, Ryan C. and Jurewicz, Katherina A.},
+TITLE = {Quantifying Pilot Performance and Mental Workload in Modern Aviation Systems: A Scoping Literature Review},
+JOURNAL = {Aerospace},
+VOLUME = {12},
+YEAR = {2025},
+NUMBER = {7},
+ARTICLE-NUMBER = {626},
+URL = {https://www.mdpi.com/2226-4310/12/7/626},
+ISSN = {2226-4310},
+ABSTRACT = {Flight deck automation changes the nature of traditional piloting tasks, ultimately changing the cognitive requirements of the pilot. It is unclear how pilot performance should be measured as automation increases. The objective of this work is to understand the variability in experimental methodology regarding how pilot performance is measured since the introduction of flight deck automation. There were 90 articles included in this scoping literature review. Less than half of the articles investigated pilot performance (~40%), about half of the articles investigated mental workload (~45%), and almost 70% of the articles collected psychophysiological data; however, only 20% of the articles investigated human–automation interaction despite automation increasing in the flight deck. Design of resilient systems that support the needs of the pilot require consideration of human-system dynamics. As aircraft systems become more autonomous, performance metrics are increasingly derived from the human operator, reflecting a shift towards human-centered evaluation. Thus, it becomes more important to understand and model the relationship between performance, mental workload, and psychophysiological data when humans work with automation.},
+DOI = {10.3390/aerospace12070626}
+}
+
+
+
+
+
+@article{daqDevelopment,
+author = {Brock Rouser and Ainsley Kyle and Katherina Jurewicz and Ryan Paul},
+title ={Development of a Scalable Data Acquisition System for Multimodal Physiological Data for Human Factors Research},
+journal = {Proceedings of the Human Factors and Ergonomics Society Annual Meeting},
+volume = {69},
+number = {1},
+pages = {1902-1904},
+year = {2025},
+doi = {10.1177/10711813251367735},
+URL = { https://doi.org/10.1177/10711813251367735},
+eprint = {https://doi.org/10.1177/10711813251367735},
+abstract = { This paper presents the development of a scalable data acquisition (DAQ) system designed for real-time collection of multimodal physiological data in human factors research. The system integrates various sensors such as EEG, ECG, eye tracking, and fNIRS into a unified framework using the MQTT protocol for asynchronous data transmission. Data are stored in InfluxDB, a time-series database, and visualized in real time through Grafana dashboards. The system enables flexible sensor management and real-time data processing through listener and processor clients, making it adaptable to different research needs. Validated through pilot flight simulations, the DAQ supports advanced modeling techniques such as Bayesian analysis for estimating cognitive workload in real time. Results show its ability to synchronize and compress high-volume data for inference on human performance. This framework offers significant potential for adaptive automation research by supporting real-time modeling and adjustment based on operator state. }}
+
+
+@Article{AinsleyBayes,
+AUTHOR = {Kyle, Ainsley and Rouser, Brock and Paul, Ryan C. and Jurewicz, Katherina A.},
+TITLE = {Hierarchical Bayesian Modeling for Physiological Data in Small-N Aviation Human Factors Research},
+JOURNAL = {Aerospace},
+VOLUME = {12},
+YEAR = {2025},
+NUMBER = {11},
+ARTICLE-NUMBER = {1004},
+URL = {https://www.mdpi.com/2226-4310/12/11/1004},
+ISSN = {2226-4310},
+ABSTRACT = {Monitoring pilot cognitive state in real time is becoming increasingly important as automation plays a larger role in aviation. Traditional workload assessments, such as questionnaires or task-based performance metrics, provide useful insights but can be limited in rapidly changing flight environments. Physiological measures, including heart rate, respiration, and electroencephalogram (EEG), offer continuous data streams, yet their variability and complexity present challenges for analysis. This study explores the use of a hierarchical Bayesian framework to quantify patterns from physiological signals recorded during high-fidelity flight simulations. Five certified pilots flew scenarios that varied in automation level and working memory demand while heart rate, respiration rate, and EEG-derived workload estimates were monitored. The model generated individualized and condition-specific estimates, quantified uncertainty, and remained stable with a small participant pool. Heart rate appeared to be the most consistent indicator, followed by EEG-derived workload, while respiration rate was less reliable across conditions. These results suggest that Bayesian inference may provide a promising way to interpret physiological data in aviation settings and could support the development of adaptive automation that responds to pilot workload. The approach emphasizes transparency and efficiency, offering complementary value to existing modeling techniques for aerospace human factors and flight deck applications.},
+DOI = {10.3390/aerospace12111004}
+}
+
+@techreport{dtic1,
+  author       = {Paul, R. and Jurewicz, K. and Rouser, B.},
+  title        = {Lawton FISTA CSIE \#3 Supporting Fort Sill Operations},
+  institution  = {Army Aviation Missile Center},
+  type         = {Technical Report},
+  note         = {Archived for Researchers at Defense Technical Information Center (Distro D)},
+  month        = jun,
+  year         = {2025}
+}
+
+@techreport{dtic2,
+  author       = {Paul, R. and Jurewicz, K. and Parnell, S. and Rouser, B.},
+  title        = {Human Factors Testbed Instrumentation Design Document},
+  institution  = {Army Aviation Missile Center},
+  type         = {Technical Report},
+  note         = {Archived for Researchers at Defense Technical Information Center (Distro D)},
+  month        = jan,
+  year         = {2025}
+}

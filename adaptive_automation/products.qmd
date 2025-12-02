@@ -1,10 +1,9 @@
 ## Academic Products
 
-Work in progress
-
-- Lit Review
-- Spatial D
-- Mental Workload
-- HFES DAQ abstract
-- Ainsleys Bayesian paper
-- DTIC Submissions
+- ***Quantifying Pilot Performance and Mental Workload in Modern Aviation Systems: A Scoping Literature Review*** [@litReview]: Secondary author. Published in Aerospace [IF = 2.1], July 2025
+- ***Characterizing Spatial Disorientation in Flight Simulation Through Electroencephalogram Trends***: Primary author. Accepted in Aerospace Medical Association [IF=0.9], November 2025
+- ***Feasibility Evaluation of a Real-Time Multimodal Data Acquisition System and Bayesian Multivariate Modeling of Pilot Mental Workload in a Flight Simulator***: Primary author. Submitted to Sci Reports in April 2025 after 6 months working through public release at sponsor. Subsequently submitted to Human Factors and Ergonomics in Manufacturing & Service Industries, September 2025 
+- ***Development of a Scalable Data Acquisition System for Multimodal Physiological Data for Human Factors Research*** [@daqDevelopment]: Primary author. Published in Proceedings of the Human Factors and Ergonomics Society Annual Meeting, October 2025
+- ***Hierarchical Bayesian Modeling for Physiological Data in Small-N Aviation Human Factors Research*** [@AinsleyBayes]: Secondary author. Published in Aerospace [IF = 2.1], November 2025
+- ***Lawton FISTA CSIE #3 Supporting Fort Sill Operations*** [@dtic1]: Contributing author. Published in Defense Technical Information Center (Distro D), June 2025
+- ***Human Factors Testbed Instrumentation Design Document*** [@dtic2]: Contributing author. Published in Defense Technical Information Center (Distro D), January 2025

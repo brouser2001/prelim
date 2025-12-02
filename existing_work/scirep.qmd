@@ -63,7 +63,7 @@ $$
 
 :::: {.columns }
 ::: {.column .fragment}
-```{.python}
+```{python}
 #| echo: false
 #| output: true
 #| 
@@ -72,7 +72,7 @@ b1.main()
 ```
 :::
 ::: {.column .fragment}
-```{.python}
+```{python}
 #| echo: false
 #| output: true
 import scripts.bayes2 as b2
