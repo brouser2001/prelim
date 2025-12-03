@@ -12,4 +12,11 @@ Adaptive automation refers to autonomous systems in which the system itself adju
 :::
 ::::
 
-
+::: notes
+- Automation in vehicles and aircraft can be classified as either adaptable or adaptive.  
+- Adaptable automation gives the operator control over the level of autonomy. For example, in fully self-driving cars, the driver decides when the system is engaged.  
+- Adaptive automation allows the system to adjust autonomy automatically based on conditions.  
+- A notable aviation example is the F-35’s auto ground collision avoidance system, which dynamically intervenes to prevent unsafe flight.  
+- Understanding this distinction is critical when designing systems that balance pilot workload, situational awareness, and safety.  
+- The figure illustrates the spectrum of autonomy levels, helping visualize where adaptive and adaptable systems fit.  
+:::

@@ -27,17 +27,28 @@
 
 :::{.fragment .fade-out data-fragment-index="2"}
 <img src="media/nova_1.2_resnet18.png" width="250">
+
 :::
 
 :::{.fragment  data-fragment-index="2"}
 <img src="media/rawEEG.png" width="450">
+
 :::
 
 :::{.fragment data-fragment-index="3"}
 <img src="media/cleanEEG.png" width="450">
+
 :::
 
 :::
 ::::
-
 ::::
+
+::: notes
+- Previous analyses showed that processed time-series features like EEG power spectral densities, heart/respiratory rate, and heart rate variability could detect statistically significant effects.  
+- Using deep learning to analyze raw physiological data allows the model to infer these features automatically, potentially capturing more nuanced patterns.  
+- A flaw in the earlier data acquisition system caused substantial data loss, which limited preliminary model performance.  
+- New EEG data are now being collected, and a cleaning pipeline using independent component analysis (ICA) is under development to improve signal quality.  
+- The figures illustrate model outputs and EEG processing: raw signals, preliminary model inference, and cleaned EEG ready for analysis.  
+- These updates will improve model robustness and the ability to detect pilot workload and cognitive states in real time.  
+:::

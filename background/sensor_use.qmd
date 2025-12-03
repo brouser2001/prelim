@@ -54,3 +54,14 @@ As organizations such as the US Navy seek to tune aircraft to fine degrees and f
 :::::
 :::::
 
+::: notes
+- Physiological signals can reflect operator states like workload and situational awareness.  
+- Growing accessibility of sensors and compute enables time-series physiological monitoring.  
+- Common sensing modalities: eye tracking, HR/HRV, EEG, fNIRS, and GSR.  
+- These sensors can provide objective, continuous measures of pilot state.  
+- Adds a data layer beyond traditional subjective pilot evaluations.  
+- Current evaluation tools rely on self-assessed workload, handling qualities, and situational awareness.  
+- Self-report metrics can be time-consuming, biased, and statistically weak with small sample sizes.  
+- Objective physiological data supports fine-tuning aircraft behavior and complements simulator-based validation.  
+- Increasing relevance as organizations and AI-enabled methods push toward higher-precision aircraft evaluation.
+:::

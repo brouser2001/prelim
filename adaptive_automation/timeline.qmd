@@ -33,3 +33,11 @@
     - Conclude: December, 2026 
 :::
 ::: 
+
+::: notes
+
+- flight simulator data collection is ongoing
+- Concurrent model development and exploration is being conducted
+- Another academic product is planned focusing on actual deployment of adaptively autonomous system
+- Future work focused on iterative design and the implementation of physiological data for system evaluation
+::: 

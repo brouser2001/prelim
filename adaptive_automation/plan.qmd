@@ -81,3 +81,23 @@ Project Risks
 
 :::::
 :::::
+
+::: notes
+- Gaps in Literature
+    - Identify practical challenges in implementing adaptive automation in aviation
+    - Display design
+    - Trust in automation
+    - Balancing workload and automation
+    - Compare adaptive automation vs. adaptable automation
+    - Determine if autonomy levels should be constrained, and by how much
+
+- Proposed Methodology
+    - Collect contextual and physiological data across diverse environments
+    - Flight simulators
+    - Multi-Attribute Task Battery (MATB)
+    - Other virtual environments
+    - Develop deep learning models based on physiological data
+    - Bayesian optimization
+    - Multiclass outputs
+    - Hybrid modeling approaches
+:::

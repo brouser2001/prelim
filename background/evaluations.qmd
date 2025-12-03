@@ -20,3 +20,14 @@ self assessment which can be prone to bias and may not capture intricacies betwe
 :::
 
 :::: 
+
+
+::: notes
+- Rapid progress from 1903 flight → modern automated/unmanned systems.  
+- Aircraft design is highly multidisciplinary; subsystems can be tested independently.  
+- Traditional methods (wind tunnels, CFD) work well for isolated subsystem evaluation.  
+- Integrated aircraft behavior is harder to assess due to subsystem interactions.  
+- Test pilot feedback is crucial but limited by very small sample sizes.  
+- Subjective pilot assessments can introduce bias and miss subtle subsystem interactions.  
+- Highlights need for more objective, scalable evaluation methods.
+:::

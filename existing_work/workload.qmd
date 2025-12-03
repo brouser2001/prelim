@@ -20,3 +20,15 @@ The developed capability to collect and analyze physiological data in ecological
 <figcaption>*Vision Transformers [@visionTransformers]*</figcaption>
 :::
 ::::
+
+::: notes
+- Collecting and analyzing physiological data in real-world settings is challenging, especially for real-time applications.  
+- The two experiments illustrate the complex, confounding nature of EEG and other physiological signals across cognitive states like mental workload, engagement, and situational/spatial awareness.  
+- These datasets are high-dimensional, noisy, and interdependent, which necessitates sophisticated modeling approaches.  
+- Advanced algorithms can improve predictive power, though sometimes at the cost of interpretability.  
+- Examples of such models include:  
+    - Support Vector Machines (SVMs) for classification of physiological states.  
+    - Convolutional Neural Networks (CNNs) to extract spatial-temporal features from multichannel EEG.  
+    - Vision Transformers adapted for time-series data, capable of capturing long-range dependencies and  patterns.  
+- These methods provide a path toward real-time inference of cognitive states from physiological signals, complementing traditional modeling techniques.  
+:::

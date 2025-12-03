@@ -18,6 +18,17 @@ Initial frequentist analysis failed when modeling physiological data due to inva
 :::
 ::::
 
+::: notes
+- This first test series was designed to evaluate our sensors and modeling pipeline so we could reliably capture workload and automation effects.  
+- We manipulated two key factors: working-memory demand via an n-back secondary task, and automation level by toggling the autopilot.  
+- Collected data streams included EEG, heart-rate metrics, subjective workload via NASA-TLX, and detailed flight parameters.  
+- The unified time-series export was large—about 145 million records—highlighting both the richness and complexity of the dataset.  
+- Initial frequentist models broke down because physiological data violate independence and linearity assumptions.  
+- As a result, we shifted to multivariate mixed-effects models, estimating parameters using Bayesian MCMC to properly handle assumptions for linear models.  
+- This approach allowed us to model pilot state more realistically and leverage the full multivariate dataset.  
+:::
+
+
 ## Linear Modeling
 Univariate and multivariate linear models can be optimized via ordinary least squares fitting 
 
@@ -44,6 +55,16 @@ However, this requires several assumptions which are dependant on data:
 
 :::{.fragment}
 Assumptions such as these can be validated via statistical tests such as Mardia's skewness/kurtosis, VIF analysis, Breusch-Pagan, etc. Violating these assumptions may result in a model that does not fit well.
+:::
+
+::: notes
+- Linear models are attractive because they’re simple, interpretable, and computationally cheap—OLS gives a closed-form solution for the coefficients.  
+- But OLS only works well when several key assumptions about the data hold.  
+- Physiological and time-series signals often violate these assumptions, especially normality, linearity, and homoscedasticity.  
+- Multicollinearity is another issue—many physiological channels covary strongly, which can destabilize coefficient estimates.  
+- These assumptions can be tested statistically using tools like Mardia’s tests for multivariate normality, VIF for collinearity, and Breusch-Pagan for heteroscedasticity.  
+- When these assumptions break, the resulting model may look valid mathematically but won’t generalize or represent the underlying physiological dynamics.  
+- This motivates moving to more flexible models later in the pipeline, such as mixed-effects or Bayesian approaches.  
 :::
 
 ## Bayesian Solution
@@ -81,6 +102,19 @@ b2.main()
 
 :::
 ::::
+
+::: notes
+- The core idea behind the Bayesian approach is that parameters are treated as probability distributions rather than fixed values.  
+- Bayes’ theorem gives us a principled way to update our beliefs about model parameters after observing data.  
+- In this context, the likelihood captures how probable the observed physiological data are given a specific set of parameters.  
+- The prior encodes any assumptions or domain knowledge we have about plausible parameter values before seeing the data.  
+- The posterior combines the two — this becomes our updated belief about the parameters after incorporating the data.  
+- This framework handles nonlinearity, correlated predictors, and non-normal residuals much more gracefully than classical OLS.  
+- The Bayesian approach is especially valuable for multivariate physiological signals, where independence assumptions break down.  
+- The two code examples illustrate sampling from the posterior using MCMC, producing full distributions rather than single point estimates.  
+- These posterior distributions allow us to quantify uncertainty directly—something classical methods often struggle with in noisy physiological datasets.  
+:::
+
 
 ## Results
 
@@ -124,3 +158,16 @@ Takeaways
 ::::
 
 ::::
+
+::: notes
+- Overall, the results highlight the limits of subjective workload measures and the value of objective physiological signals.  
+- With only five participants and four conditions, the NASA-TLX showed no statistically significant differences, even when included directly in the model.  
+- In contrast, physiological channels were much more sensitive to changes in workload and automation.  
+    - Table of parameters indicates change in physiological response variables with automation and secondary task
+    - note these values are derived via the mean of distributions, variance is not reported here for clarity 
+    - HRV increased across conditions but decreased within specific flight phases, showing good temporal specificity.  
+    - Heart rate and respiration rate moved inversely to HRV, as expected physiologically.  
+    - The MWL metric showed significance but appears specialized for working-memory demands, not general workload.  
+- Adding EEG spectral power features could reveal deeper cognitive effects, although doing so introduces additional modeling complexity.  
+- Altogether, the findings reinforce the need for time-series feature extraction and multivariate modeling to capture meaningful patterns across participants. 
+:::

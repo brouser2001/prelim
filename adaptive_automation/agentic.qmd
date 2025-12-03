@@ -9,6 +9,16 @@ The use of physiological data may benefit the development of such systems. Lever
   <figcaption>*Preliminary Advisory Display*</figcaption>
 </div>
 
+::: notes
+- Agentic AI refers to systems that can perceive, plan, and act autonomously, and their integration into aviation is becoming increasingly plausible.  
+- Advisory systems, in contrast, provide recommendations or guidance without directly controlling the aircraft.  
+- Physiological data can enhance these systems by providing a real-time measure of pilot state, such as workload or situational awareness.  
+- This enables adaptive interfaces that respond to pilot needs while maintaining safety and human oversight.  
+- Ecologically valid physiological datasets help both developers—by improving system responsiveness—and evaluators—by assessing whether autonomy truly supports the human operator.  
+- The figure shows a preliminary advisory display concept, illustrating how such systems could present information to pilots.  
+:::
+
+
 ## Current Capability
 
 A preliminary deep learning model was built and deployed in the ATRC flight simulator. Such model development is iterative and should consider how underlying physiological channels should be cleaned and integration of contextual information.
@@ -19,3 +29,12 @@ The capability being developed allows for previously theorized agentic and adapt
   <img src="media/preliminary-time-series.png" height="360">
   <figcaption>*Preliminary Workload Model*</figcaption>
 </div>
+
+::: notes
+- A preliminary deep learning model has been developed and deployed in the ATRC flight simulator.  
+- Model development is iterative, requiring careful preprocessing of physiological channels and integration of contextual flight information.  
+- This capability allows testing of previously theorized agentic and adaptive workload frameworks in real time.  
+- By combining physiological signals with contextual data, the system can infer pilot workload dynamically and potentially adjust automation levels.  
+- The figure illustrates a preliminary workload model output, showing how time-series physiological data are being leveraged for real-time assessment.  
+- This represents a step toward validating adaptive and agentic automation strategies in ecologically realistic conditions.  
+:::

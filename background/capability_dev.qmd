@@ -22,5 +22,15 @@ With readily available sensors and advanced modeling techniques, some researcher
 :::
 
 :::
+::::
 
-:::: 
+::: notes
+- Increased system autonomy has shifted safety focus toward the human operator.  
+- Research shows higher automation can paradoxically reduce pilot performance.  
+- Key factors: interaction between automation, mental workload, and situational awareness.  
+- Modern sensors and modeling techniques enable real-time tracking of pilot cognitive/affective states.  
+- Some frameworks aim to adjust cockpit automation dynamically based on these quantified states.  
+- Time-series data (e.g., physiological, behavioral) supports adaptive automation strategies.  
+- Transition from traditional modeling approaches to deep learning enables richer, more responsive pilot-state estimation.  
+:::
+

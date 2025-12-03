@@ -18,6 +18,16 @@ Utilizing a variety of physiological sensing modalities has several practical ch
     - Physiological data collection in an ecological setting may require different sensors for different tasks and may even need to consider multiple operators
 :::
 
+::: notes
+- Collecting physiological time-series data introduces major practical challenges.  
+- Sensor software is fragmented—different vendors require different OSs, libraries, and architectures.  
+- High-frequency signals from multiple sensors must be stored in a unified format to enable analysis.  
+- Synchronization across data streams is critical; even small timing offsets can invalidate results for event-related analysis.  
+- Scaling data collection to real-world, ecological settings increases complexity.  
+- Different tasks may require different sensor sets, and multi-operator scenarios multiply data volume and coordination needs.  
+:::
+
+
 ## Current Software Architecture
 
 To overcome these challenges, a novel data acquisition system was developed utilizing open source tools and a distributed architecture.
@@ -44,6 +54,18 @@ To overcome these challenges, a novel data acquisition system was developed util
 ::: {.column .fragment data-fragment-index="0"}
 ![*Current Architecture*](media/architecture.png)
 :::
+
+::: notes
+- This architecture was built to address the major data-acquisition challenges: fragmentation, synchronization, and scalability.  
+- A single control application simplifies experiment setup—researchers can select sensors, assign participant IDs, and manage configurations from one interface.  
+- Configuration is then pushed to distributed listeners, which handle launching, supervising, and shutting down sensor processes.  
+- All sensors publish data through an MQTT broker, providing a lightweight and scalable routing layer for high-frequency streams.  
+- Downstream subscribers include a unified InfluxDB instance for time-series storage, ensuring consistent formatting and synchronized timestamps.  
+- Grafana dashboards allow real-time monitoring of sensor status and participant signals.  
+- Real-time processing components can subscribe as well, enabling on-the-fly modeling, feedback loops, or workload estimation.  
+- Overall, the system supports modularity, cross-platform sensor integration, and ecological scalability.  
+:::
+
 
 ## Development History
 
@@ -96,6 +118,19 @@ Intermediate Version
 
 ::::
 
+::: notes
+- lacked key programming knowhow during initial stages
+    - no networking knowledge
+    - conventional storage methods were rudimentary
+    - displays didn't adapt to data
+
+- Intermediate version fixed some problems
+    - added networking capability
+    - utilized common time series database
+    - dynamic displays helped for live visualizations
+    - Still had scalability issues and issues with process bitness
+:::
+
 ## Operational Realism Test Framework
 
 :::: {.r-stack}
@@ -112,3 +147,15 @@ Intermediate Version
 <img src="media/grafana.png" width="900" height="600">
 :::
 ::::
+
+::: notes
+- Control panel is kept simple
+    - accessed via webapp, allows for portability
+    - makes more accessible for new users
+    - requires some preconfiguration of processes
+- New method of visualization allows web pages to be embedded
+    - Allows for ip-camera display
+    - Additionally enables dynamic Shiny dashboards to be accessed via a common platform
+- Grafana displays have a lot of options
+    - Displaying data from influx allows for ease of use and more dynamic displays
+:::

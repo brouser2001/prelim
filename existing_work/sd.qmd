@@ -14,6 +14,16 @@ A similar analysis approach was utilized after frequentist modeling checks faile
 :::
 ::::
 
+::: notes
+- Our second case study focuses on SD which while important to aviation safety in its own right, is particulairly interesting due to its cognitive nature
+- SD was induced in a flight simulator using visual and vestibular illusions created via motion decoupling.  
+- We collected multimodal physiological data: EEG, heart rate metrics, subjective workload (NASA-TLX), and detailed flight metrics.  
+- Initial frequentist models failed again due to nonlinearity and dependency issues, so we applied a similar Bayesian modeling approach.  
+- This study also explored the effect of different priors on parameter estimation, highlighting the flexibility of Bayesian methods for complex physiological datasets.  
+- The goal was to understand how SD affects both cognitive and physiological states during flight, providing insights for adaptive training or cockpit systems.  
+:::
+
+
 ## Model Checks
 
 :::: {.columns}
@@ -29,6 +39,16 @@ Two families of distributions were used as priors for HR/RR and posterior predic
 ![](media/SD/Figure3.png){.absolute top="200" left="400" width="60%" height="auto"}
 :::
 ::::
+
+::: notes
+- One limitation of Bayesian GLMs is potential bias from improper priors, so careful selection is critical.  
+- All physiological channels passed univariate normality tests but failed multivariate normality, highlighting dependencies between signals.  
+- To address this, we tested two families of distributions as priors for HR and RR channels.  
+- Posterior predictive checks were conducted to assess model fit, ensuring that the chosen priors produced realistic simulated data.  
+- These checks help validate that the Bayesian model captures the joint structure of multivariate physiological signals.  
+- Visualizations show how well posterior predictions align with observed data, providing confidence in model reliability.  
+:::
+
 
 ## Model Comparison
 
@@ -48,6 +68,17 @@ Subsets of EEG/Lifemonitor response variables compared to combined set and use o
 :::
 ::::
 
+::: notes
+- We compared subsets of EEG and Lifemonitor variables to the full combined set to evaluate model performance.  
+- Residual correlations were estimated to account for dependencies between physiological channels.  
+- The expected log predictive density (ELPD) difference measures how closely two models’ posterior predictions align.  
+- A 0 ELPD difference indicates that the two models perform equivalently.  
+- Standard error (SE) differences show the uncertainty in ELPD estimates between models.  
+- This comparison helps identify the most informative combination of channels while balancing model complexity and predictive accuracy.  
+- The figure illustrates which variable subsets yield the best posterior fit according to ELPD metrics.  
+:::
+
+
 ## Final Model Parameters {}
 
 :::: {.columns}
@@ -64,3 +95,13 @@ Final model utilized Gaussian priors to allow for estimation of residual covaria
 ![](media/SD/Figure4.png){.absolute top="200" left="500" width="50%" height="auto"}
 :::
 ::::
+
+::: notes
+- The final Bayesian model used Gaussian priors to estimate residual covariances between physiological channels.  
+- Parameter values represent normalized changes in each response variable during spatial disorientation (SD) illusions.  
+- Horizontal lines show the posterior mean and quantiles for each channel, providing a sense of central tendency and variability.  
+- The width of the x-axis distribution for each channel reflects the likelihood of specific parameter values.  
+- This visualization captures both the variance and uncertainty in physiological responses during SD events.  
+- Overall, it provides a clear picture of which channels are most sensitive to SD and the confidence we have in those estimates.  
+:::
+
