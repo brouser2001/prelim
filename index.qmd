@@ -8,9 +8,9 @@ bibliography:
 csl: apa-numeric-superscript-brackets.csl
 format: 
     revealjs:
-        #chalkboard: 
-        #    buttons: true
-        embed-resources: true
+        chalkboard: 
+            buttons: true
+        embed-resources: false
         incremental: false
         slide-number: true
         theme: custom.scss
